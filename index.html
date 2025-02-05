@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punch Clock Pro - Modern iPad Time Clock Solution</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4">
+        <span class="text-2xl font-bold text-gray-900">Magnus Tempus</span>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <div class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 py-16 text-center">
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">Punch Clock Pro</h1>
+          <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            An iOS secure kiosk system that
+            integrates directly with <br>Attendance On Demand.</br>
+          </p>
+          <a
+            href="#contact"
+            class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700">
+            Schedule a Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-lg font-semibold mb-3">&#128241 iPad Kiosk</h3>
+              <p>
+                Application for employee time punches in a dedicated
+                iOS environment.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-lg font-semibold mb-3"> &#128246AoD Integration</h3>
+              <p>
+                Seamless connectivity with Attendance On Demand for immediate
+                punch processing.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-lg font-semibold mb-3">&#128187 Easy Setup</h3>
+              <p>
+                Web-based configuration portal for techs to manage clocks and
+                stations.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-lg font-semibold mb-3">&#127749 Coming Soon:</h3>
+              <p>
+                Transfer Processing || Easy Job Costing || QR Scanning ||
+                Biometrics
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="bg-white py-16">
+        <div class="max-w-xl mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Get Started</h2>
+          <form
+            action="https://formsubmit.co/patrick@punchclock.pro"
+            method="POST"
+            class="space-y-4">
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Punch Clock Pro Inquiry" />
+            <input type="hidden" name="_captcha" value="false" />
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Name</label
+              >
+              <input
+                name="name"
+                type="text"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Email</label
+              >
+              <input
+                name="email"
+                type="email"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Company</label
+              >
+              <input
+                name="company"
+                type="text"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                rows="4"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2"></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2025 Magnus Tempus. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function sendEmail(e) {
+        e.preventDefault();
+        try {
+          const formData = new FormData(e.target);
+          const data = Object.fromEntries(formData);
+
+          window.location.href = `mailto:patrick@punchclock.pro?subject=Punch Clock Pro Inquiry&body=Name: ${data.name}%0D%0AEmail: ${data.email}%0D%0ACompany: ${data.company}`;
+        } catch (error) {
+          console.log("Error:", error);
+        }
+      }
+    </script>
+  </body>
+</html>
